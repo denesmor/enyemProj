@@ -1,0 +1,63 @@
+﻿<Window x:Class="enyemProj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:enyemProj"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="950" 
+        Width="1100" 
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Maximized">
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/ListItem.xaml" />
+    </Window.Resources>
+    <DockPanel Background="Orange">
+        <StackPanel Height="30" DockPanel.Dock="Top">
+            <TextBlock
+            FontWeight="ExtraBold"
+            Foreground="Black"
+            Text="PAPAS AUTO"
+            TextAlignment="Center"
+            FontSize="20"/>
+        </StackPanel>
+        <StackPanel
+        Width="200"
+        Background="DarkSlateGray"
+        DockPanel.Dock="Left">
+            <ListView Background="DarkSlateGray" BorderThickness="0">
+                <ListViewItem
+                x:Name="autoMENU"
+                Content="Autók"
+                MouseLeftButtonUp="diakMenu_MouseLeftButtonUp"
+                Style="{StaticResource ResourceKey=ListItemStyle}" />
+                <ListViewItem
+                x:Name="felhasznaloMENU"
+                Content="Felhasználó"
+                MouseLeftButtonUp="tanarMenu_MouseLeftButtonUp"
+                Style="{StaticResource ResourceKey=ListItemStyle}" />
+                <ListViewItem
+                x:Name="vasarloMENU"
+                Content="Vásárló"
+                MouseLeftButtonUp="osztalyMenu_MouseLeftButtonUp"
+                Style="{StaticResource ResourceKey=ListItemStyle}" />
+                <ListViewItem
+                x:Name="rolunkMENU"
+                Content="mink"
+                MouseLeftButtonUp="felhasznalokMenu_MouseLeftButtonUp"
+                Style="{StaticResource ResourceKey=ListItemStyle}" />
+                <ListViewItem
+                x:Name="kilepesMenu"
+                Background="DarkRed"
+                Content="Bezárás"
+                Foreground="LightPink"
+                MouseLeftButtonUp="kilepesMenu_MouseLeftButtonUp"
+                Style="{StaticResource ResourceKey=ListItemStyle}" />
+            </ListView>
+        </StackPanel>
+        <StackPanel x:Name="feladatPanel" DockPanel.Dock="Right" >
+            <TextBlock FontSize="40">asdasdasd</TextBlock>
+        </StackPanel>
+    </DockPanel>
+</Window>
