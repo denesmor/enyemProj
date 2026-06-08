@@ -39,7 +39,7 @@
                 Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem
                 x:Name="vasarloMENU"
-                Content="Vásárló"
+                Content="Vásárlás"
                 MouseLeftButtonUp="osztalyMenu_MouseLeftButtonUp"
                 Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using enyemProj.UserControls;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -24,6 +25,12 @@ namespace enyemProj
         {
             feladatPanel.Children.Clear();
             feladatPanel.Children.Add(new UserControls.UserControlAuto());
+
+            // Létrehozzuk az ablakot
+            var autoAblak = new UserControls.UserControlAuto();
+
+            // Megnyitjuk egy külön ablakban
+            autoAblak.Show();
         }
 
         private void tanarMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

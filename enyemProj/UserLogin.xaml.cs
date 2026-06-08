@@ -23,5 +23,12 @@ namespace enyemProj
         {
             InitializeComponent();
         }
+
+        private void loginBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWin = new MainWindow();
+            mainWin.Show();
+            this.Close();
+        }
     }
 }
