@@ -1,5 +1,8 @@
-﻿using enyemProj.UserControls;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,22 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace enyemProj
+namespace enyemProj.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserControlAutok.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserControlAutok : UserControl
     {
-        public MainWindow()
+        public UserControlAutok()
         {
             InitializeComponent();
-            
+            feladatPanel.Children.Add(new UserControlAutok());
         }
 
 
 
-   
 
         private void kilepesMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
@@ -39,14 +41,10 @@ namespace enyemProj
 
         private void autoMENU_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            feladatPanel.Children.Clear();
-            feladatPanel.Children.Add(new UserControls.UserControlAutok());
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
 
-            // Létrehozzuk az ablakot
-            var autoAblak = new UserControls.UserControlAutok();
-
-            // Megnyitjuk egy külön ablakban
-
+            
         }
 
         private void felhasznaloMENU_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

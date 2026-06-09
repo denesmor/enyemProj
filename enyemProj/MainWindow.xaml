@@ -30,22 +30,22 @@
                 <ListViewItem
                 x:Name="autoMENU"
                 Content="Autók"
-                MouseLeftButtonUp="diakMenu_MouseLeftButtonUp"
+                MouseLeftButtonDown="autoMENU_MouseLeftButtonDown"
                 Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem
                 x:Name="felhasznaloMENU"
                 Content="Felhasználó"
-                MouseLeftButtonUp="tanarMenu_MouseLeftButtonUp"
+                MouseLeftButtonDown="felhasznaloMENU_MouseLeftButtonDown"
                 Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem
                 x:Name="vasarloMENU"
                 Content="Vásárlás"
-                MouseLeftButtonUp="osztalyMenu_MouseLeftButtonUp"
+                MouseLeftButtonDown="vasarloMENU_MouseLeftButtonDown"
                 Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem
                 x:Name="rolunkMENU"
                 Content="mink"
-                MouseLeftButtonUp="felhasznalokMenu_MouseLeftButtonUp"
+                MouseLeftButtonDown="rolunkMENU_MouseLeftButtonDown"
                 Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem
                 x:Name="kilepesMenu"
@@ -57,7 +57,31 @@
             </ListView>
         </StackPanel>
         <StackPanel x:Name="feladatPanel" DockPanel.Dock="Right" >
-            <TextBlock FontSize="40">asdasdasd</TextBlock>
+            <TextBlock FontSize="40">Márkák</TextBlock>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200px"></RowDefinition>
+                    <RowDefinition Height="200px"></RowDefinition>
+                    <RowDefinition Height="200px"></RowDefinition>
+                    <RowDefinition Height="200px"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/kepek/audi.png" Width="100px" Grid.Column="0" Grid.Row="0" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/bmw.png" Width="100px" Grid.Column="1" Grid.Row="0" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/merci.png" Width="100px" Grid.Column="2" Grid.Row="0" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/porshe.png" Width="100px" Grid.Column="3" Grid.Row="0" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/mclaren.png" Width="100px" Grid.Column="0" Grid.Row="1" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/bugatti.png" Width="100px" Grid.Column="1" Grid.Row="1" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/lambo.png" Width="100px" Grid.Column="2" Grid.Row="1" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                <Image Source="/kepek/koenigsegg.png" Width="100px" Grid.Column="3" Grid.Row="1" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                
+            </Grid>
+            
         </StackPanel>
     </DockPanel>
 </Window>

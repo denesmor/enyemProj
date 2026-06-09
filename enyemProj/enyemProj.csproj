@@ -8,4 +8,52 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="kepek\audi.png" />
+    <None Remove="kepek\audir8.jpg" />
+    <None Remove="kepek\bmw.png" />
+    <None Remove="kepek\bmwi8.jpg" />
+    <None Remove="kepek\bmwm5comp.webp" />
+    <None Remove="kepek\bugatti.png" />
+    <None Remove="kepek\bugattidivo.jpg" />
+    <None Remove="kepek\ferrari.avif" />
+    <None Remove="kepek\ferrari488.jpg" />
+    <None Remove="kepek\ferrarif40.webp" />
+    <None Remove="kepek\koenigsegg.png" />
+    <None Remove="kepek\koenigseggjesko.jfif" />
+    <None Remove="kepek\koenigseggoneone.jpg" />
+    <None Remove="kepek\lambo.png" />
+    <None Remove="kepek\lambohuracan.jpeg" />
+    <None Remove="kepek\lambosvj.webp" />
+    <None Remove="kepek\mclaren.png" />
+    <None Remove="kepek\mercedesgwagon.webp" />
+    <None Remove="kepek\merci.png" />
+    <None Remove="kepek\porsche911.jpg" />
+    <None Remove="kepek\porshe.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="kepek\audi.png" />
+    <Resource Include="kepek\audir8.jpg" />
+    <Resource Include="kepek\bmw.png" />
+    <Resource Include="kepek\bmwi8.jpg" />
+    <Resource Include="kepek\bmwm5comp.webp" />
+    <Resource Include="kepek\bugatti.png" />
+    <Resource Include="kepek\bugattidivo.jpg" />
+    <Resource Include="kepek\ferrari.avif" />
+    <Resource Include="kepek\ferrari488.jpg" />
+    <Resource Include="kepek\ferrarif40.webp" />
+    <Resource Include="kepek\koenigsegg.png" />
+    <Resource Include="kepek\koenigseggjesko.jfif" />
+    <Resource Include="kepek\koenigseggoneone.jpg" />
+    <Resource Include="kepek\lambo.png" />
+    <Resource Include="kepek\lambohuracan.jpeg" />
+    <Resource Include="kepek\lambosvj.webp" />
+    <Resource Include="kepek\mclaren.png" />
+    <Resource Include="kepek\mercedesgwagon.webp" />
+    <Resource Include="kepek\merci.png" />
+    <Resource Include="kepek\porsche911.jpg" />
+    <Resource Include="kepek\porshe.png" />
+  </ItemGroup>
+
 </Project>
